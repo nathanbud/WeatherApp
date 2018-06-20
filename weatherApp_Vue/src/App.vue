@@ -1,8 +1,11 @@
 <template>
   <div>
     <div class="wrapper">
-    <Header></Header>
+      <div class="container">
+       
     <weather></weather>
+   
+  </div>
   </div>
   </div>
 </template>
@@ -21,142 +24,9 @@ title: 'Your first Vue file'
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css?family=Merriweather:100,200,300,300i,400,400i,700');
-@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
-
-body {
-  font-family: "Open Sans", serif;
-}
-
 .wrapper {
   background: linear-gradient(to right, #89f6fa4d, #1b1b1b23), url('./img/we.jpg');
   height:calc(100vh + 280px);
-  background-size: cover;
- 
- 
-}
-
-
-.title-container {
-  align-items: center;
-  text-align: center;
-  color: rgb(251, 253, 253);
-  line-height: .8;
-}
-
-.title-container_title {
-  font-size: 40px;
-  letter-spacing: 2px;
-  font-family: 'Roboto Slab', serif;
-}
-
-.title-container_subtitle {
-  font-style: italic;
-  font-weight: 100;
-  letter-spacing: 1px;
-  line-height: 1.5;
-  font-family: "Merriweather", serif;
-}
-
-.form-container {
-  background-color: rgba(82, 106, 110, 0.747);
-  height: 60%;
-  padding: 50px ;
-}
-
-.weather-container{
-  transition: 9s;
-}
-.row-centering{
-  justify-content: center;
-}
-
-input[type="text"] {
-  background-color: transparent;
-  border: 0;
-  border-bottom: solid 1px #22dfe6;
-  width: 100%;
-  max-width:35%;
-  padding-bottom: 4px;
-  color: #fff !important;
-  font-weight: lighter;
-  letter-spacing: 2px;
-  margin-bottom: 30px;
-  margin-right: 20px;
-  font-size: 20px;
-}
-
-input[type="text"] { 
-    outline: none;
-}
-
-input[type="text"]::placeholder { 
-  outline: none;
-  color:#22dfe6;
-}
-
-input:-webkit-autofill {
-    -webkit-box-shadow: 0 0 0 30px #22dfe6 inset;
-    -webkit-text-fill-color: #fff !important;
-}
-
-button {
-  border: 0;
-  padding: 8px 20px;
-  margin: 0 2px;
-  border-radius: 2px;
-  letter-spacing: 1px;
-  font-size: 15px;
-  cursor: pointer;
-  background-color: #3cbfe7;
-  color: #fff;
-  font-weight: 400;
-}
-
-button:active {
-  outline: none;
-}
-
-.weather__info {
-  width: 60%;
-  font-size: 20px;
-  font-weight: 200;
-  letter-spacing: 2px;
-}
-
-.weather__key {
-  color: #3cbfe7;
-  border-bottom: solid 2px #22dfe6;
-  padding: 2px 0 2px 0;
-  font-size: 20px;
-  font-weight: 400;
-  letter-spacing: 2px;
-}
-
-.weather__key:last-child {
-  border: 0;
-}
-.weather__key__icon {
- text-align: center;
-
-}
-.weather__key__icon img {
-  width:100px;
-  height: auto;
- }
-
-.weather__value {
-  color: #fff;
-  font-weight: 200;
-  padding: 0 0 0 15px;
-}
-
-
-.weather__error {
-  color: #f16051;
-  font-size: 20px;
-  letter-spacing: 1px;
-  font-weight: 200;
+  background-size: cover; 
 }
 </style>
